@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A simple Puzzle Game</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<section class="container">
+	<header>
+		<h1>A simple Puzzle Game</h1>
+	</header>
+
+	<nav></nav>
+
+	<section>
+		
+		<article>
+			<h1>A simple Puzzle Game</h1>
+			<p>Using the image pieces below to solve the puzzle</p>
+			<div class="main">
+				<img src="images/main.jpg">
+			</div>
+
+
+			<div class="pieces">
+				<img src="images/p1.png" id="p1" dragable="true" ondragstart="drag_image(event)">
+				<img src="images/p2.png" id="p2" dragable="true" ondragstart="drag_image(event)">
+				<img src="images/p3.png" id="p3" dragable="true" ondragstart="drag_image(event)">
+				<img src="images/p4.png" id="p4" dragable="true" ondragstart="drag_image(event)">
+			</div>
+		</article>
+
+		<aside>
+			<h1>Drop Zone!</h1>
+			<div class="frame">
+				
+				<div  class ="p1" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+				<div  class ="p2" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+				<div  class ="p3" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+				<div  class ="p4" ondragover="allowDrop(event)" ondrop="dropImage(event)"></div>
+			</div>
+
+		</aside>
+	</section>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
